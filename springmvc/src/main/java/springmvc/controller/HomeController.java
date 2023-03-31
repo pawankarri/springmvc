@@ -41,6 +41,11 @@ public String home(Model model)
 		ModelAndView modview=new ModelAndView();
 		modview.addObject("name","hyderabad");
 		modview.addObject("pincode",500072);
+		List ll=new ArrayList();
+		ll.add(2541);
+		ll.add(5422);
+		ll.add(2564);
+		modview.addObject("coll", ll);
 		modview.setViewName("help");
 		System.out.println("this is help page");
 		return modview;
